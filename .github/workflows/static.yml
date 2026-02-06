@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites | Vegetarian & Non-Vegetarian Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/restaurant-.png">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h1>Delicious<span>Bites</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#veg">Vegetarian</a></li>
+                    <li><a href="#nonveg">Non-Vegetarian</a></li>
+                    <li><a href="#owner">Owner</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Savor the Taste of Excellence</h2>
+            <p>Experience the finest vegetarian and non-vegetarian cuisine crafted with passion and the freshest ingredients. From sizzling kebabs to wholesome vegetarian delights, we have something for every palate.</p>
+            <a href="#menu" class="cta-button">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="container" id="menu">
+        <div class="section-title">
+            <h2>Our Specialties</h2>
+        </div>
+        
+        <div class="category-buttons">
+            <button class="category-btn active" data-category="all">All Items</button>
+            <button class="category-btn" data-category="veg"><i class="fas fa-leaf veg-icon"></i> Vegetarian</button>
+            <button class="category-btn" data-category="nonveg"><i class="fas fa-drumstick-bite nonveg-icon"></i> Non-Vegetarian</button>
+        </div>
+        
+        <div class="food-items" id="foodItems">
+            <!-- Food items will be loaded dynamically with JavaScript -->
+        </div>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="container" id="owner">
+        <div class="owner-section">
+            <div class="owner-content">
+                <div class="owner-photo">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Taha Nadeem">
+                </div>
+                <div class="owner-details">
+                    <h3>Meet Our Owner: <span>Taha Nadeem</span></h3>
+                    <p><i class="fas fa-user contact-icon"></i> <strong>Taha Nadeem</strong> - Food Enthusiast & Chef</p>
+                    <p><i class="fas fa-envelope contact-icon"></i> hamisheikh106@gmail.com</p>
+                    <p><i class="fas fa-phone contact-icon"></i> +92 304 7617251</p>
+                    <p><i class="fas fa-map-marker-alt contact-icon"></i> Multan, Pakistan</p>
+                    <p>With over 10 years of experience in the culinary industry, Taha brings passion and expertise to every dish. His vision is to create a dining experience that combines traditional flavors with modern presentation.</p>
+                    <p>"Food is not just about eating, it's about creating memories. That's why we put our heart into every dish we serve."</p>
+                    
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be added here -->
+                <p class="empty-cart-message">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Delicious Bites</h3>
+                    <p>Your destination for exquisite vegetarian and non-vegetarian cuisine. We serve quality food with love and passion.</p>
+                    <p><i class="fas fa-clock"></i> Open: 10:00 AM - 11:00 PM</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Multan, Pakistan</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#veg">Vegetarian</a></li>
+                        <li><a href="#nonveg">Non-Vegetarian</a></li>
+                        <li><a href="#owner">About Owner</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-user"></i> Taha Nadeem</p>
+                    <p><i class="fas fa-envelope"></i> hamisheikh106@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +92 304 7617251</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Multan, Pakistan</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with us on social media for updates and offers.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Delicious Bites. All rights reserved. | Designed by Taha Nadeem</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
